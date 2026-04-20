@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Devbhoomi Drink"
+version = "1.0.0"
+id = "artifacts/devbhoomi-drink"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26190
+
+[services.development]
+run = "pnpm --filter @workspace/devbhoomi-drink run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/devbhoomi-drink", "run", "build" ]
+publicDir = "artifacts/devbhoomi-drink/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26190"
+BASE_PATH = "/"
