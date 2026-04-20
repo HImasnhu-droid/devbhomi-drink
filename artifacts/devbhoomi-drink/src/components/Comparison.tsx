@@ -27,7 +27,7 @@ export function Comparison() {
   ];
 
   return (
-    <section className="py-24 px-6 md:px-12 bg-primary text-primary-foreground relative overflow-hidden">
+    <section id="comparison" className="py-24 px-6 md:px-12 bg-primary text-primary-foreground relative overflow-hidden">
       {/* Abstract Background pattern */}
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
       

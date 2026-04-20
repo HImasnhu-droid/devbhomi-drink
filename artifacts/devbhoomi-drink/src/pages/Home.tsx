@@ -1,4 +1,4 @@
-import React from "react";
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Products } from "@/components/Products";
 import { Comparison } from "@/components/Comparison";
@@ -10,11 +10,12 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-[100dvh] w-full flex flex-col bg-background font-sans text-foreground selection:bg-primary selection:text-primary-foreground">
+      <Navbar />
       <Hero />
-      <Pride />
       <Products />
       <Comparison />
       <Outlet />
+      <Pride />
       <Founder />
       <Footer />
     </div>

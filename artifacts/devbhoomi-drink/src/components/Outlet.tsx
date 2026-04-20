@@ -4,7 +4,7 @@ import { MapPin, Phone, Star } from "lucide-react";
 
 export function Outlet() {
   return (
-    <section className="py-24 px-6 md:px-12 bg-[#faf9f6]">
+    <section id="outlet" className="py-24 px-6 md:px-12 bg-[#faf9f6]">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
