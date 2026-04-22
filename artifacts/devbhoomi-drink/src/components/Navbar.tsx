@@ -37,9 +37,9 @@ export function Navbar() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group" data-testid="link-home">
             <img
-              src="/logo.jpg"
+              src="/logo-main.jpg"
               alt="Devbhoomi Drink"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover ring-2 ring-green-200 group-hover:ring-green-400 transition-all"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover bg-white ring-2 ring-red-200 group-hover:ring-red-400 transition-all"
             />
             <span className="flex flex-col leading-none">
               <span

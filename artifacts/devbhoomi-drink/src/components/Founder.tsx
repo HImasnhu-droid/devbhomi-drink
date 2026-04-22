@@ -72,30 +72,14 @@ export function Founder() {
             {/* Avatar illustration */}
             <div className="relative">
               <div
-                className="w-52 h-52 md:w-64 md:h-64 rounded-full flex items-center justify-center shadow-2xl border-4 border-yellow-300/40 overflow-hidden"
-                style={{ background: "linear-gradient(135deg, #1a6b3a, #2d9b52)" }}
+                className="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-300/60"
               >
-                {/* Abstract mountain portrait */}
-                <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
-                  {/* Background circle gradient */}
-                  <circle cx="80" cy="80" r="80" fill="url(#bg)" />
-                  {/* Mountains */}
-                  <path d="M20,130 L55,60 L80,90 L110,45 L140,130Z" fill="rgba(255,255,255,0.08)" />
-                  <path d="M0,140 L40,80 L65,105 L90,55 L115,95 L140,65 L160,140Z" fill="rgba(255,255,255,0.12)" />
-                  {/* Person silhouette */}
-                  <circle cx="80" cy="52" r="22" fill="#fde68a" />
-                  <path d="M45,140 C45,110 62,95 80,95 C98,95 115,110 115,140Z" fill="#fde68a" />
-                  {/* Pahadi topi hat */}
-                  <ellipse cx="80" cy="34" rx="26" ry="10" fill="#c0392b" />
-                  <rect x="58" y="24" width="44" height="14" rx="3" fill="#e74c3c" />
-                  <path d="M64 24 C64 14 96 14 96 24" fill="#c0392b" />
-                  <defs>
-                    <linearGradient id="bg" x1="0" y1="0" x2="160" y2="160">
-                      <stop offset="0%" stopColor="#1a6b3a" />
-                      <stop offset="100%" stopColor="#2d9b52" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img
+                  src="/founder.jpg"
+                  alt="Sachin Gairola — Founder of Devbhoomi Drink"
+                  className="w-full h-full object-cover"
+                  data-testid="img-founder"
+                />
               </div>
               {/* Glow ring */}
               <div className="absolute inset-0 rounded-full border-2 border-yellow-300/30 scale-110 pointer-events-none" />

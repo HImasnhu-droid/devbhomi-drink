@@ -218,7 +218,7 @@ export function Hero() {
           className="mb-6"
         >
           <img
-            src="/logo.jpg"
+            src="/logo-main.jpg"
             alt="Devbhoomi Drink Logo"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover ring-4 ring-white/30 shadow-2xl"
           />

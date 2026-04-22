@@ -4,6 +4,7 @@ import { Products } from "@/components/Products";
 import { Comparison } from "@/components/Comparison";
 import { Pride } from "@/components/Pride";
 import { Outlet } from "@/components/Outlet";
+import { Offers } from "@/components/Offers";
 import { Founder } from "@/components/Founder";
 import { Footer } from "@/components/Footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Products />
+      <Offers />
       <Comparison />
       <Outlet />
       <Pride />
