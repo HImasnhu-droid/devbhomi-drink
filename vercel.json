@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install -g pnpm@9 && pnpm install --frozen-lockfile=false",
+  "buildCommand": "pnpm --filter @workspace/devbhoomi-drink build",
+  "outputDirectory": "artifacts/devbhoomi-drink/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
