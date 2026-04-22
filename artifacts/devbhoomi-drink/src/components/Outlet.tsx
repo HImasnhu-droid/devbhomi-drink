@@ -36,7 +36,7 @@ export function Outlet() {
                 9411190278
               </a>
               <a
-                href="https://www.zomato.com/rishikesh"
+                href="https://zomato.onelink.me/xqzv/o6lubr22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-full bg-red-500 text-white font-bold border border-red-600 shadow-md hover:bg-red-600 hover:scale-105 active:scale-95 transition-all"

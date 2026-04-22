@@ -15,9 +15,9 @@ function FreshBottle() {
       height="260"
       viewBox="0 0 180 260"
       fill="none"
-      animate={{ y: [0, -10, 0], rotate: [-2, 2, -2] }}
-      transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-      className="drop-shadow-2xl"
+      animate={{ y: [0, -8, 0] }}
+      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      style={{ filter: "drop-shadow(0 20px 25px rgba(0,0,0,0.35))", transformOrigin: "center bottom", willChange: "transform" }}
     >
       {/* Cap */}
       <rect x="70" y="10" width="40" height="22" rx="4" fill="#3d6b1f" />
@@ -59,9 +59,9 @@ function FactoryCan() {
       height="260"
       viewBox="0 0 160 260"
       fill="none"
-      animate={{ y: [0, 6, 0], rotate: [1, -1, 1] }}
-      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      className="drop-shadow-xl"
+      animate={{ y: [0, 5, 0] }}
+      transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+      style={{ filter: "drop-shadow(0 15px 20px rgba(0,0,0,0.4))", transformOrigin: "center bottom", willChange: "transform" }}
     >
       {/* Top of can */}
       <ellipse cx="80" cy="35" rx="55" ry="10" fill="#3a3a3a" />
@@ -261,8 +261,9 @@ export function Comparison() {
         {/* VS badge floating in center */}
         <motion.div
           className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
-          animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          animate={{ scale: [1, 1.08, 1] }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+          style={{ willChange: "transform" }}
         >
           <div className="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-300 to-orange-500 flex items-center justify-center shadow-2xl border-4 border-white/40">
             <span className="text-2xl font-black text-green-900 italic">VS</span>
