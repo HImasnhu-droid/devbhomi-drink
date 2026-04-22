@@ -35,10 +35,16 @@ export function Outlet() {
                 <Phone className="w-5 h-5" />
                 9411190278
               </a>
-              <div className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-full bg-red-50 text-red-600 font-medium border border-red-100">
+              <a
+                href="https://www.zomato.com/rishikesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-full bg-red-500 text-white font-bold border border-red-600 shadow-md hover:bg-red-600 hover:scale-105 active:scale-95 transition-all"
+                data-testid="link-zomato"
+              >
                 <Star className="w-5 h-5 fill-current" />
-                Available on Zomato
-              </div>
+                Order on Zomato
+              </a>
             </div>
           </div>
 
