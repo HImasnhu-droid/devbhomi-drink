@@ -72,17 +72,18 @@ export function Founder() {
             {/* Avatar illustration */}
             <div className="relative">
               <div
-                className="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-300/60"
+                className="w-64 md:w-72 overflow-hidden shadow-2xl border-4 border-yellow-300/60"
+                style={{ height: "380px", borderRadius: "28px" }}
               >
                 <img
                   src="/founder.jpg"
                   alt="Sachin Gairola — Founder of Devbhoomi Drink"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                   data-testid="img-founder"
                 />
               </div>
               {/* Glow ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-yellow-300/30 scale-110 pointer-events-none" />
+              <div className="absolute inset-0 border-2 border-yellow-300/30 scale-105 pointer-events-none" style={{ borderRadius: "32px" }} />
             </div>
 
             {/* Name & title */}
@@ -99,7 +100,7 @@ export function Founder() {
               {[
                 { label: "Products", value: "2+" },
                 { label: "States", value: "All India" },
-                { label: "Dream", value: "Pahadi" },
+                { label: "Dream", value: "Pure India" },
               ].map((stat) => (
                 <div
                   key={stat.label}

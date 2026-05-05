@@ -224,26 +224,36 @@ export function Hero() {
           />
         </motion.div>
 
-        {/* देवभूमि — Devanagari, bold + italic for cursive feel */}
+        {/* देवभूमि — Devanagari, bold + italic + cycling color animation */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: [-10, 10, -10] }}
           transition={{ opacity: { duration: 0.8 }, y: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 } }}
         >
-          <h1
+          <motion.h1
             className="font-black leading-none select-none"
             style={{
               fontFamily: "'Noto Sans Devanagari', sans-serif",
               fontSize: "clamp(72px, 16vw, 180px)",
               fontStyle: "italic",
-              color: "#FFD700",
               letterSpacing: "-0.01em",
-              textShadow: "0 0 40px rgba(255,215,0,0.5), 0 4px 30px rgba(0,0,0,0.6)",
             }}
+            animate={{
+              color: ["#FFD700", "#FF8C00", "#FF4444", "#FF69B4", "#FF8C00", "#FFD700"],
+              textShadow: [
+                "0 0 40px rgba(255,215,0,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+                "0 0 40px rgba(255,140,0,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+                "0 0 40px rgba(255,68,68,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+                "0 0 40px rgba(255,105,180,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+                "0 0 40px rgba(255,140,0,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+                "0 0 40px rgba(255,215,0,0.6), 0 4px 30px rgba(0,0,0,0.6)",
+              ],
+            }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             data-testid="text-hero-devanagari"
           >
             देवभूमि
-          </h1>
+          </motion.h1>
         </motion.div>
 
         {/* "drink" in cursive */}

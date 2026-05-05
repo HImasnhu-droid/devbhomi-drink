@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devbhoomidrink.vercel.app/sitemap.xml
+Sitemap: https://devbhoomidrink.com/sitemap.xml
